@@ -1,0 +1,2 @@
+- ex1 folder contains the results for "[0-3]\*(23){2}[0-3]\*"
+- ex2 folder contains the results for "[0-3]\*(23){2}[0-3]\*|[0-3]\*(23)(0|1)[0-3]\*" (this is the one Dr. Scott suggested)

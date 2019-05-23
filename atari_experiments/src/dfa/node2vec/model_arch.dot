@@ -1,0 +1,25 @@
+digraph G {
+rankdir=TB;
+concentrate=True;
+node [shape=record];
+140271789258512 [label="MDP: InputLayer\n|{input:|output:}|{{(None, 4, 84, 84)}|{(None, 4, 84, 84)}}"];
+140271789259128 [label="permute_1: Permute\n|{input:|output:}|{{(None, 4, 84, 84)}|{(None, 84, 84, 4)}}"];
+140271789337120 [label="conv2d_1: Conv2D\n|{input:|output:}|{{(None, 84, 84, 4)}|{(None, 20, 20, 32)}}"];
+140271789337064 [label="conv2d_2: Conv2D\n|{input:|output:}|{{(None, 20, 20, 32)}|{(None, 9, 9, 64)}}"];
+140271789337232 [label="conv2d_3: Conv2D\n|{input:|output:}|{{(None, 9, 9, 64)}|{(None, 7, 7, 64)}}"];
+140271783814648 [label="flatten_1: Flatten\n|{input:|output:}|{{(None, 7, 7, 64)}|{(None, 3136)}}"];
+140271783919856 [label="dense_1: Dense\n|{input:|output:}|{{(None, 3136)}|{(None, 512)}}"];
+140271783474960 [label="DFA_EMB: InputLayer\n|{input:|output:}|{{(None, 2)}|{(None, 2)}}"];
+140271783475520 [label="concatenate_1: Concatenate\n|{input:|output:}|{{[(None, 512), (None, 2)]}|{(None, 514)}}"];
+140271783474792 [label="dense_2: Dense\n|{input:|output:}|{{(None, 514)}|{(None, 4)}}"];
+140271789258512 -> 140271789259128;
+140271789259128 -> 140271789337120;
+140271789337120 -> 140271789337064;
+140271789337064 -> 140271789337232;
+140271789337232 -> 140271783814648;
+140271783814648 -> 140271783919856;
+140271783919856 -> 140271783475520;
+140271783474960 -> 140271783475520;
+140271783475520 -> 140271783474792;
+}
+

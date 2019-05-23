@@ -1,0 +1,2 @@
+Regex	RawCount	Frames	ViolationOpportunities	Violations
+((4|7|9|C|F|H){4}|(3|6|8|B|E|G){4}|(2|6|7|A|E|F){4}|(5|8|9|D|G|H){4})[0-9A-H]{10}((4|7|9|C|F|H){4}|(3|6|8|B|E|G){4}|(2|6|7|A|E|F){4}|(5|8|9|D|G|H){4})	314051	1750000	97222.222	3.2302389
