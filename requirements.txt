@@ -38,7 +38,7 @@ numpy==1.15.4
 opencv-python==3.4.5.20
 pandas==0.23.4
 pbr==5.1.1
-Pillow==5.4.0
+Pillow==9.3.0
 progressbar2==3.39.2
 protobuf==3.6.1
 pycparser==2.19
